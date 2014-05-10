@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-TARGET_GLOBAL_CFLAGS += -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfloat-abi=softfp
+TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -24,6 +24,14 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 TARGET_ARCH_VARIANT_CPU := cortex-a15
 TARGET_ARCH_VARIANT_FPU := neon-vfpv4
+
+# Krait optimizations
+TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
+TARGET_USE_KRAIT_PLD_SET := true
+TARGET_KRAIT_BIONIC_PLDOFFS := 10
+TARGET_KRAIT_BIONIC_PLDTHRESH := 10
+TARGET_KRAIT_BIONIC_BBTHRESH := 64
+TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 TARGET_NO_BOOTLOADER := true
 
@@ -34,10 +42,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
 TARGET_KERNEL_CONFIG := geeb_defconfig
 
-TARGET_OTA_ASSERT_DEVICE := mako,geeb,gee_a,e970,gee,geebus,e973,e971
-
-# Turn off touchboost logcat spamfest, touchboost still happens.
-TARGET_POWERHAL_NO_TOUCH_BOOST := true
+TARGET_OTA_ASSERT_DEVICE := geeb,gee_a,e970,gee,geebus,e973,e971
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
@@ -69,8 +74,6 @@ WIFI_DRIVER_FW_PATH_AP  := "ap"
 
 BOARD_EGL_CFG := device/lge/geeb/egl.cfg
 
-#BOARD_USES_HGL := true
-#BOARD_USES_OVERLAY := true
 USE_OPENGL_RENDERER := true
 TARGET_USES_ION := true
 TARGET_USES_OVERLAY := true
@@ -79,6 +82,9 @@ TARGET_USES_C2D_COMPOSITON := true
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_UI_LIB := librecovery_ui_geeb
+
+# WITH_QC_PERF := true
+TARGET_POWERHAL_TOUCH_BOOST := true
 
 TARGET_RECOVERY_FSTAB = device/lge/geeb/fstab.geeb
 RECOVERY_FSTAB_VERSION = 2
@@ -138,5 +144,7 @@ BOARD_SEPOLICY_UNION := \
 USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+
+TARGET_BOOTANIMATION_PRELOAD := true
 
 HAVE_ADRENO_SOURCE:= false
