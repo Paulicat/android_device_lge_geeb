@@ -35,6 +35,10 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
+PRODUCT_PACKAGES += \
+    libcyanogen-dsp \
+    LockClock
+
 PRODUCT_COPY_FILES += \
 	kernel/lge/geeb/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
 	kernel/lge/geeb/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
