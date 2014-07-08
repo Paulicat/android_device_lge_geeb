@@ -22,10 +22,7 @@ PRODUCT_PACKAGES += \
         LiveWallpapers \
         LiveWallpapersPicker \
         VisualizationWallpapers \
-	Apollo \
-	DSPManager \
-	libcyanogen-dsp \
-	LockClock
+	libcyanogen-dsp
 
 
 # Get the long list of APNs

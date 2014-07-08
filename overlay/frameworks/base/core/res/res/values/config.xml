@@ -23,22 +23,19 @@
     <bool name="config_animateScreenLights">false</bool>
 
     <!-- Default color for notification LED is Yellow. -->
-    <color name="config_defaultNotificationColor">#ffffff</color>
+    <color name="config_defaultNotificationColor">#00ff00</color>
 
     <!-- Default LED on time for notification LED in milliseconds. -->
-    <integer name="config_defaultNotificationLedOn">500</integer>
+    <integer name="config_defaultNotificationLedOn">750</integer>
 
     <!-- Default LED off time for notification LED in milliseconds. -->
-    <integer name="config_defaultNotificationLedOff">1000</integer>
+    <integer name="config_defaultNotificationLedOff">2000</integer>
 
     <!-- Default value for led color when battery is low on charge: <= 14% -->
     <integer name="config_notificationsBatteryLowARGB">0xFFFF0000</integer>
 
     <!-- Default value for led color when battery is medium charged: 15-99% -->
     <integer name="config_notificationsBatteryMediumARGB">0xFFFF0000</integer>
-
-    <!-- Default value for led color when battery is fully charged (Yellow) -->
-    <!--<integer name="config_notificationsBatteryFullARGB">0xFFFFFFFF</integer>-->
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->

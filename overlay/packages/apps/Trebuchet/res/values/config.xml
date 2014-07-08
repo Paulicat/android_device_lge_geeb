@@ -1,2 +1,4 @@
 <resources>
+    <bool name="allow_rotation">true</bool>
+    <integer name="config_workspaceDefaultScreen">1</integer>
 </resources>
