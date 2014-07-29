@@ -74,6 +74,19 @@ PRODUCT_COPY_FILES += \
 	device/lge/geeb/keypad_8064.kcm:system/usr/keychars/keypad_8064.kcm \
 	device/lge/geeb/pmic8xxx_pwrkey.kcm:system/usr/keychars/pmic8xxx_pwrkey.kcm
 
+# Sounds
+PRODUCT_COPY_FILES += \
+	device/lge/geeb/Video_Game.ogg:/system/media/audio/ringtones/Video_Game.ogg \
+	device/lge/geeb/Cloud.ogg:/system/media/audio/notifications/Cloud.ogg \
+	device/lge/geeb/Promise.ogg:/system/media/audio/notifications/Promise.ogg \
+	device/lge/geeb/IME_Delete.ogg:/system/media/audio/ui/IME_Delete.ogg \
+	device/lge/geeb/IME_Spacebar.ogg:/system/media/audio/ui/IME_Spacebar.ogg \
+	device/lge/geeb/IME_Standard.ogg:/system/media/audio/ui/IME_Standard.ogg \
+	device/lge/geeb/KeypressDelete.ogg:/system/media/audio/ui/KeypressDelete.ogg \
+	device/lge/geeb/KeypressReturn.ogg:/system/media/audio/ui/KeypressReturn.ogg \
+	device/lge/geeb/KeypressSpacebar.ogg:/system/media/audio/ui/KeypressSpacebar.ogg \
+	device/lge/geeb/KeypressStandard.ogg:/system/media/audio/ui/KeypressStandard.ogg
+
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
 	device/lge/geeb/touch_dev.idc:system/usr/idc/touch_dev.idc
