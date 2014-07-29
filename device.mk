@@ -76,16 +76,20 @@ PRODUCT_COPY_FILES += \
 
 # Sounds
 PRODUCT_COPY_FILES += \
-	device/lge/geeb/Video_Game.ogg:/system/media/audio/ringtones/Video_Game.ogg \
-	device/lge/geeb/Cloud.ogg:/system/media/audio/notifications/Cloud.ogg \
-	device/lge/geeb/Promise.ogg:/system/media/audio/notifications/Promise.ogg \
-	device/lge/geeb/IME_Delete.ogg:/system/media/audio/ui/IME_Delete.ogg \
-	device/lge/geeb/IME_Spacebar.ogg:/system/media/audio/ui/IME_Spacebar.ogg \
-	device/lge/geeb/IME_Standard.ogg:/system/media/audio/ui/IME_Standard.ogg \
-	device/lge/geeb/KeypressDelete.ogg:/system/media/audio/ui/KeypressDelete.ogg \
-	device/lge/geeb/KeypressReturn.ogg:/system/media/audio/ui/KeypressReturn.ogg \
-	device/lge/geeb/KeypressSpacebar.ogg:/system/media/audio/ui/KeypressSpacebar.ogg \
-	device/lge/geeb/KeypressStandard.ogg:/system/media/audio/ui/KeypressStandard.ogg
+	device/lge/geeb/prebuilt/Video_Game.ogg:/system/media/audio/ringtones/Video_Game.ogg \
+	device/lge/geeb/prebuilt/Cloud.ogg:/system/media/audio/notifications/Cloud.ogg \
+	device/lge/geeb/prebuilt/Promise.ogg:/system/media/audio/notifications/Promise.ogg \
+	device/lge/geeb/prebuilt/IME_Delete.ogg:/system/media/audio/ui/IME_Delete.ogg \
+	device/lge/geeb/prebuilt/IME_Spacebar.ogg:/system/media/audio/ui/IME_Spacebar.ogg \
+	device/lge/geeb/prebuilt/IME_Standard.ogg:/system/media/audio/ui/IME_Standard.ogg \
+	device/lge/geeb/prebuilt/KeypressDelete.ogg:/system/media/audio/ui/KeypressDelete.ogg \
+	device/lge/geeb/prebuilt/KeypressReturn.ogg:/system/media/audio/ui/KeypressReturn.ogg \
+	device/lge/geeb/prebuilt/KeypressSpacebar.ogg:/system/media/audio/ui/KeypressSpacebar.ogg \
+	device/lge/geeb/prebuilt/KeypressStandard.ogg:/system/media/audio/ui/KeypressStandard.ogg
+
+# Prebuilt libcyanogen-dsp.so
+PRODUCT_COPY_FILES += \
+	device/lge/geeb/prebuilt/libcyanogen-dsp.so:system/lib/soundfx/libcyanogen-dsp.so
 
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
