@@ -42,10 +42,6 @@ PRODUCT_PACKAGES += \
     Launcher3
 
 PRODUCT_COPY_FILES += \
-    device/lge/geeb/prebuilt/Video_Game.ogg:system/media/audio/ringtones/Video_Game.ogg \
-    device/lge/geeb/prebuilt/Promise.ogg:system/media/audio/notifications/Promise.ogg
-
-PRODUCT_COPY_FILES += \
 	kernel/lge/geeb/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
 	kernel/lge/geeb/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
 	device/lge/geeb/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin
