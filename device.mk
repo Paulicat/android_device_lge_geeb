@@ -29,7 +29,8 @@ PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PACKAGES := \
-	lights.geeb
+	lights.geeb \
+	Torch
 
 PRODUCT_PACKAGES += \
     charger_res_images \
@@ -42,11 +43,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     device/lge/geeb/prebuilt/Video_Game.ogg:system/media/audio/ringtones/Video_Game.ogg \
-    device/lge/geeb/prebuilt/Promise.ogg:system/media/audio/notifications/Promise.ogg \
-    device/lge/geeb/prebuilt/daemonsu:system/xbin/daemonsu \
-    device/lge/geeb/prebuilt/su:system/xbin/su \
-    device/lge/geeb/prebuilt/Superuser.apk:system/app/Superuser.apk \
-    device/lge/geeb/prebuilt/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+    device/lge/geeb/prebuilt/Promise.ogg:system/media/audio/notifications/Promise.ogg
 
 PRODUCT_COPY_FILES += \
 	kernel/lge/geeb/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
