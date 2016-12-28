@@ -160,7 +160,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += persist.hwc.mdpcomp.enable=true
 
 PRODUCT_TAGS += dalvik.gc.type-precise
-
+p
 PRODUCT_PACKAGES += \
 	librs_jni \
 	com.android.future.usb.accessory
@@ -170,7 +170,7 @@ PRODUCT_PACKAGES += \
 	e2fsck
 
 PRODUCT_PACKAGES += \
-	libgenlock \
+t	libgenlock \
 	liboverlay \
 	hwcomposer.msm8960 \
 	gralloc.msm8960 \
@@ -275,6 +275,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
+
+# QRNGD 
+PRODUCT_PACKAGES += qrngd
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
